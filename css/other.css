@@ -1,4 +1,12 @@
 /*https://imagecolorpicker.com/color-code/*/
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
