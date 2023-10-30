@@ -11,10 +11,12 @@
     <meta property="og:url" content="https://cath-org.co.uk/" />
     <meta property="og:site_name" content="CATH" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
-    <script type="text/javascript" src="js/other.js"></script>
+    <script type="text/javascript" src="js/colour.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css.map" rel="stylesheet">
@@ -106,47 +108,57 @@
 
 <body id="index">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">CATH</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-green" aria-label="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">CATH</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Map</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Get Involved
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Volunteering</a></li>
-                                <li><a class="dropdown-item" href="#">Donating</a></li>
-                                <li><a class="dropdown-item" href="#">Carrers</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="story.html">Our Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Get Involved
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="GetInvolved/V.html">Volunteering</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/D.html">Donating</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/C.html">Carrers</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/S.html">Stories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
@@ -155,100 +167,145 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
                     <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Make a Donation</h1>
+                            <p class="opacity-75">Every penny goes to aiding those at risk of homelessness</p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
+
                     <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Tayview House</h1>
+                            <p>A purpose built 8 flat unit providing supported accommodation with a focus on recovery.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
+
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Community Hub</h1>
+                            <p> Provides support to individuals in crisis as well as those seeking help with particular
+                                day to day living tasks.</p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
+
                     <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Floating House Support</h1>
+                            <p class="opacity-75">Team of experienced and
+                                knowledgeable Development and Support workers. <br> Supporting service users to
+                                maintain independent living in their own accommodation.</p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
+
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Outreach</h1>
+                            <p>First point of contact for those in need of support. </p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg>
+
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="carousel-caption text-black">
+                            <h1>Charity Shop</h1>
+                            <p>Voulenteer run shop providing friendly atmosphere where everyone is welcome to
+                                browse.<br>
+                                REVOLVE certified</p>
+                            <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon bg-black rounded" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon bg-black rounded" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-tertiary">
+                <div class="container py-5">
+                    <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-tertiary">
+                <div class="container py-5 jumbotron rounded">
+                    <h1 class=" text-body-emphasis">Who Are We</h1>
+                    <p class="col-lg-8 mx-auto lead">
+                        Churches Action for the Homeless (CATH) are index.htmla local charity which supports, encourages
+                        and promotes the development and delivery of services to alleviate and prevent homelessness, and
+                        address the issue of poor housing. Like the four Founding
+                            Mothers before us, CATH seeks to work with others to improve the circumstances faced by
+                        people challenged by homelessness in all its forms in the Perth & Kinross Council area.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-tertiary">
+                <div class="container py-5">
+                    <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
 
 
+
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-tertiary">
+                <div class="container py-5 jumbotron rounded">
+                    
+                    <h1 class="text-body-emphasis">What We Do</h1>
+                    <p class="col-lg-8 mx-auto lead">
+                        Recognising the associated problems that frequently accompany homelessness we work to alleviate
+                        those issues and help maintain and improve the quality of life of the individuals we support. We
+                        help significant numbers of people each year to overcome homelessness and related issues through
+                        our projects which include a drop-in Day Centre, Tayview House, Floating Support, Outreach Team,
+                        Literacy Project, and our Charity Shop.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            changeColors('jumbotron', '#6a7857', '#fff');
+          </script>
     </main>
 
-    <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="container-fluid text-bg-dark">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 border-top">
             <div class="col mb-3">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
                 </a>
                 <p class="text-body-secondary">&copy; 2023</p>
             </div>
@@ -258,17 +315,19 @@
             </div>
 
             <div class="col mb-3">
-                <h5>Our Work</h5>
+                <h5 class="text-light">Our Work</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tayview House</a>
                     </li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Community Hub</a>
                     </li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Floating Housing
-                            Support</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">literacy and
-                            numeracy</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Outreach</a></li>
+                            Support</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Charity Shop</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Outreach</a>
+                    </li>
                 </ul>
             </div>
 
@@ -277,12 +336,14 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Starter Packs</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Useful Links</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Useful Links</a>
+                    </li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Make a Donation</a>
                     </li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Voulenteering</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Get In Touch</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Get In Touch</a>
+                    </li>
                 </ul>
             </div>
 
