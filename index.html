@@ -247,55 +247,167 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-        
         <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5 bg-danger">
-                    <h1 class="text-body-emphasis">Need Help?</h1>
-                    <p class="col-lg-8 mx-auto lead">
-                        Clicke <a href="map.html">here</a> to find out where you can get help.
-                    </p>
+            <!-- Pop-up encouraging people to donate -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <h2>Help us make a difference!</h2>
+                    <p>Your donation can help us provide support to those in need.</p>
+                    <a class="btn btn-lg btn-danger" href="#">Donate now</a>
                 </div>
             </div>
+
+            <style>
+                /* Styling for the pop-up */
+                .popup {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 9999;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .popup-content {
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+
+                .popup-content h2 {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .popup-content p {
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                }
+
+                .popup-content a {
+                    font-size: 1.2rem;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                }
+            </style>
+
+            <script>
+                // Code to fade in the pop-up when the user scrolls to the bottom of the page
+                window.onscroll = function(ev) {
+                    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                        var popup = document.querySelector('.popup');
+                        popup.style.display = 'flex';
+                        setTimeout(function() {
+                            popup.style.display = 'none';
+                        }, 5000);
+                    }
+                };
+            </script>
         </div>
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5">
-                    <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
-                </div>
+                <div class="row">
+                    <div class="col-lg-4 rounded hover pb-2 pt-4">
+                        <!-- Card 1 -->
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="text-center row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <h2>Tayview House</h2>
+                                <p>A purpose built 8 flat unit providing supported accommodation with a focus on recovery.</p>
+                                <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 rounded hover pb-2 pt-4">
+                        <!-- Card 2 -->
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="text-center row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <h2>Community Hub</h2>
+                                <p>Provides support to individuals in crisis as well as those seeking help with particular day to day living tasks.</p>
+                                <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 rounded hover pb-2 pt-4">
+                        <!-- Card 3 -->
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="text-center row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <h2>Floating House Support</h2>
+                                <p class="opacity-75">Team of experienced and knowledgeable Development and Support workers. <br> Supporting service users to maintain independent living in their own accommodation.</p>
+                                <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+
+                    <div class="bg-green rounded-pill" style="height: 10px;"></div>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4 rounded hover pb-2 pt-4">
+                        <!-- Card 4 -->
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="text-center row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <h2>Outreach</h2>
+                                <p>First point of contact for those in need of support. </p>
+                                <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 rounded hover pb-2 pt-4">
+                        <!-- Card 5 -->
+                        <img src="img/Placeholder.png" alt="Placeholder">
+                        <div class="text-center row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <h2>Charity Shop</h2>
+                                <p>Voulenteer run shop providing friendly atmosphere where everyone is welcome to browse.<br>REVOLVE certified</p>
+                                <p><a class="btn btn-lg btn-primary btn-dark" href="#">Learn more</a></p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+                
             </div>
         </div>
-
+        </div>
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5 jumbotron rounded">
+                
+                <div class="container py-5 hover rounded">
                     <h1 class=" text-body-emphasis">Who Are We</h1>
                     <p class="col-lg-8 mx-auto lead">
                         Churches Action for the Homeless (CATH) are index.htmla local charity which supports, encourages
                         and promotes the development and delivery of services to alleviate and prevent homelessness, and
-                        address the issue of poor housing. Like the four Founding
-                            Mothers before us, CATH seeks to work with others to improve the circumstances faced by
-                        people challenged by homelessness in all its forms in the Perth & Kinross Council area.
+                        address the issue of poor housing. Like the four Founding Mothers before us, CATH seeks to work 
+                        with others to improve the circumstances faced by people challenged by homelessness in all its 
+                        forms in the Perth & Kinross Council area.
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5">
+                <div class="container">
                     <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
                 </div>
-            </div>
-        </div>
-
-
-
-        <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5 jumbotron rounded">
-                    
+                <div class="container py-5 hover rounded"> 
                     <h1 class="text-body-emphasis">What We Do</h1>
                     <p class="col-lg-8 mx-auto lead">
                         Recognising the associated problems that frequently accompany homelessness we work to alleviate
@@ -308,8 +420,20 @@
             </div>
         </div>
 
+<!-- FILEPATH: /c:/Users/onelo/OneDrive/Documents/GitHub/CATH/index.html -->
+
+<!-- Danger colored Bootstrap popup -->
+<div class="alert alert-danger alert-dismissible fade show position-fixed bottom-0 start-0 end-0 text-center" role="alert">
+    <strong>Need help? </strong> We're here <button class="btn btn-danger btn-sm ms-2">Where to find us</button>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<!-- Bootstrap CSS and JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-+9zv8z5jvzJ5JzJZzqZzJjzJZzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-+J8X6z7JzvJ7zJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script>
-            changeColors('jumbotron', '#6a7857', '#fff');
+            changeColors('hover', '#6a7857', '#fff');
           </script>
     </main>
 
