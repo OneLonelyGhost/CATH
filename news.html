@@ -17,6 +17,8 @@
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
     <script type="text/javascript" src="js/other.js"></script>
+    <script type="text/javascript" src="js/colour.js"></script>
+
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css.map" rel="stylesheet">
@@ -108,154 +110,90 @@
 </head>
 
 <body id="index">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"
+        nonce="4w4dWvlU"></script>
     <header>
         <div class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-green" aria-label="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">CATH</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-green" aria-label="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">CATH</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="story.html">Our Story</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="map.html">Map</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="news.html">News</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="getInv.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" onmouseover="this.click()">
-                                Get Involved
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="GetInvolved/V.html">Volunteering</a></li>
-                                <li><a class="dropdown-item" href="GetInvolved/D.html">Donating</a></li>
-                                <li><a class="dropdown-item" href="GetInvolved/C.html">Carrers</a></li>
-                                <li><a class="dropdown-item" href="GetInvolved/S.html">Stories</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="story.html">Our Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="getInv.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" onmouseover="this.click()">
+                                    Get Involved
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="GetInvolved/V.html">Volunteering</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/D.html">Donating</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/C.html">Carrers</a></li>
+                                    <li><a class="dropdown-item" href="GetInvolved/S.html">Stories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         </div>
     </header>
 
     <main>
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5" id="">
-                    <h1 class="text-body-emphasis">Our most recent news</h1>
+                <div class="container p-5 rounded-1 jumbotron" style="border-radius: 25px;"">
+                    <h1 class=" text-body-emphasis">News</h1>
                     <p class="col-lg-8 mx-auto lead">
-                        Keep up to date with the latest news from CATH
+                        Stay up to date with the latest news from CATH.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row g-5">
-
-
-        <div class="my-5">
-            <div class="p-5 text-left bg-body-tertiary">
-                <div class="container py-5" id="">
-                    <h1 class="text-body-emphasis">Posts</h1>
-                    <article class="blog-post">
-                        <h2 class="display-5 link-body-emphasis mb-1">CATH's New Website: Bridging the Gap to Help the Homeless</h2>
-                        <p class="blog-post-meta">October 30, 2023 by <a href="#">John Doe</a></p>
-                    
-                        <p>As the needs of our community evolve, so must our methods of outreach and support. We are thrilled to announce that Churches Action for the Homeless (CATH) is in the process of launching a brand-new website to better serve those experiencing homelessness in the Perth & Kinross Council area.</p>
-                    
-                        <hr>
-                    
-                        <p>With this initiative, we aim to provide a seamless and accessible platform for individuals seeking assistance, volunteers looking to get involved, and donors eager to make a difference. The website will be a hub of information, resources, and opportunities for all those who want to join us in the fight against homelessness.</p>
-                    
-                        <h2>Enhanced User Experience</h2>
-                    
-                        <p>Our new website will offer a user-friendly experience, allowing visitors to easily navigate and find the information they need. Whether it's learning about our programs, accessing resources, or staying updated on our latest initiatives, everything will be just a click away.</p>
-                    
-                        <h2>Empowering the Community</h2>
-                    
-                        <p>We believe that empowerment is the key to breaking the cycle of homelessness. Through the website, we will connect individuals with a range of services, from counseling and addiction support to job training programs. This holistic approach aims not only to provide immediate relief but also to equip individuals with the tools they need to regain stability and independence.</p>
-                    
-                        <h2>Advocacy and Awareness</h2>
-                    
-                        <p>CATH has always been committed to advocating for systemic change. Our new website will serve as a platform to raise awareness about the underlying causes of homelessness and to mobilize the community towards lasting solutions. We will share stories, resources, and opportunities for everyone to get involved in creating a more inclusive and compassionate society.</p>
-                    
-                        <h2>Join Us in Making a Difference</h2>
-                    
-                        <p>Stay tuned for the official launch of our new website, where you can become a part of our mission to end homelessness in the Perth & Kinross Council area. Together, we can make a meaningful impact on the lives of those in need.</p>
-                    </article>
-                    <div class="container p-3 m-3">
-                        <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/TheCATHShopPerth" data-tabs="timeline"
+                        data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="false"
+                        data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/TheCATHShopPerth" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/TheCATHShopPerth">CATH Shop</a></blockquote>
                     </div>
-
-                    <article class="blog-post">
-                        <h2 class="display-5 link-body-emphasis mb-1">Spooky Season at CATH Charity Shop!</h2>
-                        <p class="blog-post-meta">October 15, 2023 by <a href="#">John Doe</a></p>
-                    
-                        <p>As the leaves change color and the air turns crisp, Halloween is just around the corner. At CATH, we're embracing the spirit of the season with some fang-tastic decorations in our charity shop!</p>
-                        <img src="img/halloween_decorations.jpg" alt="Halloween Decorations at CATH Charity Shop">
-                    
-                        <p>If you're looking to add a touch of spookiness to your home or office, look no further. Our shelves are filled with bewitching decorations that will make your space feel like a haunted mansion.</p>
-                        <hr>
-                    
-                        <h2>Creepy Collection</h2>
-                        <p>From eerie candles to ghastly garlands, our collection has something for everyone. Whether you're hosting a haunted house party or just want to add a little boo to your space, we've got you covered.</p>
-                    
-                        <h3>Featured Items:</h3>
-                        <ul>
-                            <li>Spooky Spiderweb Tablecloth</li>
-                            <li>Glow-in-the-Dark Skeleton Figurines</li>
-                            <li>Witch's Brew Cauldron Mug</li>
-                            <li>Ghostly Graveyard Wall Decal</li>
-                        </ul>
-                    
-                        <h2>Ghostly Good Cause</h2>
-                        <p>When you shop with us, you're not just getting ghoulishly good decorations—you're also supporting a cause that's close to our hearts. Every purchase goes towards helping those experiencing homelessness in the Perth & Kinross Council area.</p>
-                    
-                        <blockquote class="blockquote">
-                            <p>"By decorating your space with our Halloween goodies, you're helping us light up the lives of those in need."</p>
+                    <div class="fb-page" data-href="https://www.facebook.com/CATHOrgPerth" data-tabs="timeline, events"
+                        data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/CATHOrgPerth" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/CATHOrgPerth">Churches Action for The Homeless (CATH)</a>
                         </blockquote>
-                    
-                        <h2>Join the Spooky Fun!</h2>
-                        <p>Visit our charity shop at 188  190 High Street and get into the Halloween spirit with us. Whether you're a witch, a werewolf, or just someone who loves a good scare, we have something for you!</p>
-                    
-                        <p>Remember, the more you shop, the more we can do to make a difference in our community. Together, we can turn this spooky season into a season of hope and kindness.</p>
-                    </article>
-                    
-                    <div class="container p-3 m-3">
-                        <div class="bg-green rounded-pill" style="height: 10px; width: 100%;"></div>
                     </div>
-                    
                 </div>
             </div>
         </div>
 
-        <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-                <div class="container py-5" id="">
-                    <h1 class="text-body-emphasis"></h1>
-                    <p class="col-lg-8 mx-auto lead">
-                    </p>
-                </div>
-            </div>
+        <div class="alert alert-danger alert-dismissible fade show position-fixed bottom-0 start-0 end-0 text-center" role="alert">
+            <strong>Need help? </strong> We're here <a href="map.html" class="btn btn-danger btn-sm ms-2">Where to find us</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+
+        <script>
+            changeColors('jumbotron', '#6a7857', '#fff');
+          </script>
+
     </main>
 
     <div class="container-fluid text-bg-dark">
