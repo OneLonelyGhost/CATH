@@ -79,21 +79,11 @@ body {
 }
 
 body#index {
-  background: #C2ccd0;
+  background: #d0ecf0;
   padding-bottom: 0px;
+  text: #1e4e56
 }
 
-body#tutorial {
-  background: #576a78;
-}
-
-body#help {
-  background: #78576a;
-}
-
-body#search {
-  background: #6a7857;
-}
 
 
 .bg-black {
