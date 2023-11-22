@@ -5,7 +5,7 @@ function changeColors(className, bgColor, textColor) {
     elements[i].addEventListener('mouseover', function() {
       this.style.transition = 'background-color 0.5s ease, color 0.5s ease';
       this.style.backgroundColor = bgColor;
-      this.style.color = textColor;
+      this.style.color = '';
     });
     
     elements[i].addEventListener('mouseout', function() {
