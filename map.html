@@ -110,8 +110,8 @@
 </head>
 
 <body class="bg-light">
-    <header class="bg-light fixed-top">
-        <nav class="navbar navbar-expand navbar-light bg-light" aria-label="navbar first row">
+    <header class="bg-light">
+        <nav class="navbar navbar-expand navbar-light bg-light nav-first-row" aria-label="navbar first row">
             <div class="container-xl">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"
                         style="max-width: 150px; max-height: 150px;"></a>
@@ -133,7 +133,7 @@
             </div>
         </nav>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="navbar second row">
+        <nav class="navbar navbar-expand-lg navbar-light nav-second-row" aria-label="navbar second row" id="nav2">
             <div class="container-xl">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
@@ -294,6 +294,26 @@
         </div>
         <script>
             changeColors('hover', '#3c8f00', '#fff');
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var secondRow = document.querySelector('.nav-second-row');
+                var initialTopOffset = secondRow.offsetTop;
+        
+                window.addEventListener('scroll', function() {
+                    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+                    if (scrollTop >= initialTopOffset) {
+                        secondRow.style.position = 'fixed'; // Set the position to fixed to stick our element
+                        secondRow.style.top = 0 + 'px'; // Set the top to 0 so our element will stick to the top of the screen
+                        secondRow.style.right = 755 + 'px'; // Set the right to 755 so our element will stay in the middle of the screen
+                        secondRow.style.zIndex = '1000'; // Set a higher z-index value
+                    } else {
+                        secondRow.style.position = 'static';
+                        secondRow.style.zIndex = 'auto'; // Reset to default
+                    }
+                });
+            });
         </script>
 
     </main>

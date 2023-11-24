@@ -30,10 +30,7 @@ body {
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-#help {
-  background-color: #dd1818;
-  color: #ffffff;
-}
+
 
 .b-example-vr {
   flex-shrink: 0;
@@ -78,10 +75,7 @@ body {
   overflow-x: hidden;
   padding-bottom: 0px;
 }
- main {
-  padding-top: 200px;
-  padding-bottom: 0px;
- }
+
 
 
 .bg-green {
@@ -91,10 +85,6 @@ body {
   background-color: #0088aa;
 }
 
-.bg-black {
-  background-color: #000000;
-}
-
 .relative-position {
   position: relative;
 }
@@ -102,127 +92,14 @@ body {
 
 
 
-.flip-horizontally {
-  transform: scaleX(-1);
-}
-
-.flip-vertically {
-  transform: scaleY(-1);
-}
-
-
-@media (max-width: 2560px) {
-  .text-on-image {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 1700px) {
-  .text-on-image {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 1234px) {
-  .text-on-image {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .text-on-image {
-    font-size: 24px;
-  }
-}
-
-
-body#tutorial .container-fluid {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
-
-body#tutorial a {
-  color: #0E1317;
-}
-
-.greyBox {
-
-
-
-  background: #9AA6AE;
-  border-width: 0px 7px 6px 0px;
-  border-style: solid;
-  border-color: #DDE1E4;
-  border-radius: 8px;
-}
-
-.greyBox p {
-  color: #0E1317;
-
-}
-
-.greyBox h2 {
-  color: #0E1317;
-}
-
-.blueBox {
-  background: #4A5B67;
-  border-width: 0px 7px 6px 0px;
-  border-style: solid;
-  border-color: #000000;
-  border-radius: 8px;
-
-}
-
-.blueBox p {
-  color: #E6E6E6;
-}
-
-.blueBox ul {
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  color: #E6E6E6;
-}
-
-.blueBox h2 {
-  color: #E6E6E6;
-}
-
-
-
-.search-result {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-.search-title {
-  margin-top: 0;
-}
-
-.search-title a {
-  color: #272c31;
-  text-decoration: none;
-}
-
-.search-description {
-  margin-bottom: 0;
-}
-
-code {
-  background-color: #eee;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 0 3px;
-}
+/* Custom CSS for the carousel */
 
 .carousel-item img {
   width: 100%;
   height: 100%;
 }
+
+/* Custom CSS for the navbar */
 
 /* Custom CSS for increasing font size in the navbar */
 .navbar-nav .nav-link {
