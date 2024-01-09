@@ -2,12 +2,17 @@
 body {
   padding-bottom: 20px;
 }
+.navbar-nav .nav-link {
+  font-size: 20px; /* Change this value to adjust the font size */
+}
 
 .navbar {
   margin-bottom: 20px;
 }
 
-
+.dropdown-menu .dropdown-item {
+  font-size: 18px; /* Change this value to adjust the font size for dropdown items */
+}
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -99,14 +104,4 @@ body {
   height: 100%;
 }
 
-/* Custom CSS for the navbar */
 
-/* Custom CSS for increasing font size in the navbar */
-.navbar-nav .nav-link {
-  font-size: 20px; /* Change this value to adjust the font size */
-}
-
-/* Increasing font size for dropdown items */
-.dropdown-menu .dropdown-item {
-  font-size: 18px; /* Change this value to adjust the font size for dropdown items */
-}

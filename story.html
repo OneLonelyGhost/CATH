@@ -18,13 +18,15 @@
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
     <script type="text/javascript" src="js/colour.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css.map" rel="stylesheet">
     <link href="css/headers.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/other.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
 
     
 
@@ -32,114 +34,41 @@
 </head>
 
 <body class="bg-light">
-    <header class="bg-light">
-        <nav class="navbar navbar-expand navbar-light bg-light nav-first-row" aria-label="navbar first row">
-            <div class="container-xl">
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"
-                        style="max-width: 150px; max-height: 150px;"></a>
-
-                <div class="collapse navbar-collapse" id="navbarsExample02">
-                    <div class="alert alert-danger mt-3 px-2 hover">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link alert-link" href="#">Donate</a>
-                            </li>
+    <header-component></header-component>
+    <nav class="navbar navbar-expand-md navbar-light nav-second-row" aria-label="navbar second row" id="nav2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center nav-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Get Help</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="map.html#map">Where we are</a></li>
+                            <li><a class="dropdown-item" href="map.html#people">Who to find</a></li>
+                            <li><a class="dropdown-item" href="map.html#services">What we do</a></li>
                         </ul>
-                    </div>
-                    <div class="col-8">
-                    </div>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Get Involved</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="news.html#news">Latest News</a></li>
+                            <li><a class="dropdown-item" href="news.html#volunteer">Volunteer</a></li>
+                            <li><a class="dropdown-item" href="news.html#job">Jobs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="story.html#history">Our Story</a></li>
+                            <li><a class="dropdown-item" href="story.html#stories">Who We've Helped</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <nav class="navbar navbar-expand-lg navbar-light nav-second-row" aria-label="navbar second row" id="nav2">
-            <div class="container-xl">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample07XL">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <div class="col-8 dropdown-divider">
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                        </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Get Help</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="map.html#map">Where we are</a></li>
-                                <li><a class="dropdown-item" href="map.html#people">Who to find</a></li>
-                                <li><a class="dropdown-item" href="map.html#services">What we do</a></li>
-                            </ul>
-                        </li>
-                        <div class="col-2 dropdown-divider">
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                        </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Get Involved</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="news.html#news">Latest News</a></li>
-                                <li><a class="dropdown-item" href="news.html#volunteer">Volunteer</a></li>
-                                <li><a class="dropdown-item" href="news.html#job">Jobs</a></li>
-                            </ul>
-                        </li>
-                        <div class="col-2 dropdown-divider">
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                        </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover rounded" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">About Us</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="story.html#history">Our Story</a></li>
-                                <li><a class="dropdown-item" href="story.html#stories">Who We've Helped</a></li>
-                            </ul>
-                        </li>
-                        <div class="col-2 dropdown-divider">
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
         <div class="container bg-blue text-white mt-3 px-2 rounded"> <!-- Our History -->
@@ -367,92 +296,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
-        <script>
-            changeColors('hover', '#3c8f00', '');
-        </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var secondRow = document.querySelector('.nav-second-row');
-                var initialTopOffset = secondRow.offsetTop;
         
-                window.addEventListener('scroll', function() {
-                    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-                    if (scrollTop >= initialTopOffset) {
-                        secondRow.style.position = 'fixed'; // Set the position to fixed to stick our element
-                        secondRow.style.top = 0 + 'px'; // Set the top to 0 so our element will stick to the top of the screen
-                        secondRow.style.right = 755 + 'px'; // Set the right to 755 so our element will stay in the middle of the screen
-                        secondRow.style.zIndex = '1000'; // Set a higher z-index value
-                    } else {
-                        secondRow.style.position = 'static';
-                        secondRow.style.zIndex = 'auto'; // Reset to default
-                    }
-                });
-            });
-        </script>
     </main>
 
-    <div class="container-fluid text-bg-dark">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 border-top">
-            <div class="col mb-3">
-                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                </a>
-                <p class="text-body-secondary">&copy; 2023</p>
-            </div>
-
-            <div class="col mb-3">
-
-            </div>
-
-            <div class="col mb-3">
-                <h5 class="text-light">Our Work</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tayview House</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Community Hub</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Floating Housing
-                            Support</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Charity Shop</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Outreach</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col mb-3">
-                <h5>Discover More</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Starter Packs</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Useful Links</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Make a Donation</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Voulenteering</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Get In Touch</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col mb-3">
-                <h5>Contact Us</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">Churches Action for the Homeless,
-                        188-190 High Street,
-                        Perth, PH1 5PA</li>
-                    <li class="nav-item mb-2"> </li>
-                    <li class="nav-item mb-2">Main Number: 01738 580188</li>
-                    <li class="nav-item mb-2">Day Centre: 01738 633077</li>
-                    <li class="nav-item mb-2">Tayview House: 01738 479606</li>
-                    <li class="nav-item mb-2">Charity Shop: 01738 580665</li>
-                    <li class="nav-item mb-2"> </li>
-                    <li class="nav-item mb-2">CATH is a registered charity: SC021740</li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+    <script>
+        changeColors('hover', '#3c8f00', '#000000');
+    </script>
+    <script>
+        navStick('.nav-second-row', '.nav-items');
+    </script>
+    
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer-component></footer-component>
+
+
 </body>
